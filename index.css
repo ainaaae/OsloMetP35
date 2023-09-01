@@ -5,10 +5,24 @@ h1 {
 .OslometGulLogo {
 }
 
-.boks {
-  width: 300px;
-  border: 5px solid rgb(255, 220, 0);
-  padding: 30px;
-  margin: 20px;
-  
+
+
+
+
+.grid-container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+  gap: 20px;
 }
+
+.grid-rammer {
+  
+  text-align: center;
+  padding: 20px;
+  border: 2px solid rgb(255, 220, 0); 
+}
+
+
+
+
