@@ -68,16 +68,12 @@ background-color: rgb(255, 220, 0);
 justify-content: center;  
 }
 
-.contact-box {
-background-color: black;
-color: white;
-padding: 10px;
-height: 70px;
-width: 400px;
-
-
-
-text-align: center;
+.boks {
+  width: 300px;
+  border: 5px solid rgb(255, 220, 0);
+  padding: 30px;
+  margin: 20px;
+  
 }
 
 
