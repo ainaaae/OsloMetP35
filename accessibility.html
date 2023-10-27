@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Accessibility</title>
+    <link rel="stylesheet" href="index.css" />
+    <link rel="icon" type="image/jpg" href="bilder/Oslomet gul.png">
+</head>
+<body>
+<!--Topp banner-->
+<header>
+    <div class="header">
+        <h1>Pilstredet 35: Ellen Gleditschs hus</h1>
+        <img id="oslometGulLogo" src="bilder/oslometsvart, bare øvredel.png" alt="Oslomet-logoen">
+        <!--Kilde: https://foto.oslomet.no/fotoweb/archives/5005-OsloMet-logo/Folder%2052/Logomedsignatur_OsloMet-01.png.info#c=%2Ffotoweb%2Farchives%2F5005-OsloMet-logo%2F
+        har tatt bort teksten under så du bare får Oslomet i skrå fra bildet. -->
+    </div>
+    <!--droppdaown meny-->
+    <div class="dropdown">
+        <button class="dropbtn"> Meny</button>
+        <div class="dropdown-content">
+            <a href="index.html">Hovedside</a>
+            <a href="Kalender.html">Eventer</a>
+            <a href="Fasiliteter.html">Fasiliteter</a>
+        </div>
+    </div>
+</header>
+<main>
+    <div id="tekstboks">
+        <div class="mellomrom-setning">
+            <h2>DATA1200: Accessibility</h2>
+            <p>Short presentation of accessibility for your site. Test your site with an automated test. Write a very short text (about 400-500 words) about how you tested the code for accessibility using this automated test. Tell us how you checked, and coding choices you made for universal design beyond what an automated test could tell you. You are recommended to use screenshots from the testing site and of your code – lack of images may affect your score.</p>
+        </div>
+        <div class="mellomrom-setning">
+            <h2>WAVE</h2>
+            <p>Testing av nettsiders tilgjengelighet har blitt en uunnværlig praksis for utviklere og designere i dagens digitale verden. Det er viktig å sørge for at alle brukere, uavhengig av funksjonshemninger, har en jevn, meningsfull og likeverdig opplevelse når de besøker nettsider. En viktig ressurs i denne prosessen er WAVE (Web Accessibility Evaluation Tool). WAVE er et kraftig verktøy for automatisk testing av nettsiders tilgjengelighet som gir innsikt og veiledning for å avdekke og løse tilgjengelighetsproblemer på en nettside. På dette grunnlaget benytter vi oss av dette programmet til å teste vår nettside.</p>
+        </div>
+        <div class="mellomrom-setning">
+            <a href="https://wave.webaim.org/?fbclid=IwAR1IQmriPF7ATMGhfSAZQVmAFxpxlrXk4leQPds0T8ocOPyMM9eW0hc-8b4"><strong>WAVE (Web Accessibility Evaluation Tool):</strong></a>
+        </div>
+        <div class="mellomrom-setning">
+            <h2>Manuelle tester</h2>
+            <p>For testing av kontraster valgte vi å benytte WebAIM. Dette verktøyet har hjulpet oss med å sikre at tekst og grafikk på nettstedet oppfyller de nødvendige kontraststandardene, og dermed bidrar til en mer tilgjengelig og brukervennlig opplevelse for alle våre besøkende.</p>
+        </div>
+        <div class="mellomrom-setning">
+            <a href="https://webaim.org/resources/contrastchecker/?fbclid=IwAR2dlEEVZ0B8521wKPoe0YfdIyAsacs4ossAxBu2us5goBmCK77N1abqgq4"><strong>WebAIM (Web Accessibility in mind):</strong></a>
+        </div>
+        <div class="mellomrom-setning"></div>
+            <img class="accessibility-bilder" src="bilder/contrast_checker.png" alt="Bildet av kontrasttesten">
+            <p>Kontrasttesten i WebAIM har vist svært positive resultater. Den bekrefter at tekst og annet innhold på nettstedet har tilstrekkelig kontrast mot bakgrunnen, noe som forbedrer lesbarheten og tilgjengeligheten. Dette er et viktig skritt for å sikre at alle brukere, inkludert de med nedsatt syn, kan få en mer komfortabel og effektiv opplevelse på nettstedet.</p>
+        <div class="mellomrom-setning">
+            <h2>Responsivt design</h2>
+            <p>Vi har aktivt testet det responsive designet på nettsiden ved å justere størrelsen på nettleseren. Dette har tillatt oss å identifisere og løse eventuelle layout- og brukervennlighetsutfordringer på forskjellige skjermstørrelser og enheter. Vårt mål har vært å sikre en jevn og optimal opplevelse for alle besøkende, uavhengig av hvilken enhet de bruker for å besøke nettstedet vårt.</p>
+        </div>
+        <div class="mellomrom-setning">
+            <h2>Brukertest</h2>
+            <p>Selv om tidsbegrensninger hindret oss i å gjennomføre brukertesting med kandidater med funksjonsnedsettelser, er bevisstheten om viktigheten av tilgjengelighet økt. Vi forplikter oss til å inkludere slik testing i fremtidige revisjoner og forbedringer av nettstedet for å sikre en inkluderende opplevelse for alle brukere.</p>
+        </div>
+    </div>
+</main>
+<!--Bunn banner-->
+<footer>
+    <div class="bunntekst">
+        <div id="tekst">
+            <div class="container_nyhetsbrev">
+                <h3>Hold deg oppdatert på hva som skjer på OsloMet.</h3>
+            </div>
+            <!-- Container for kontaktkassen -->
+            <div class="contact-box">
+                <h3>
+                    <a href="mailto:Pilstredet35@oslomet.no"> Abonner på vårt Nyhetsbrev!</a>
+                </h3>
+            </div>
+            <hr>
+            <h3>OSLO METROPOLITAN UNIVERSITY
+                <br> STORBYUNIVERSITETET
+            </h3>
+            <!-- Container for adressen og kontaktinformasjonen -->
+            <div class="mellomrom-setning">
+                <!-- Individuelle span-elementer for hver linje med adresse og kontaktinformasjon -->
+                <span>Pilstredet 35</span>
+                <span>Postboks 4, St. Olavs plass</span>
+                <span>0130 Oslo</span>
+                <span>Tlf 67 23 50 00</span>
+            </div>
+        </div>
+    </div>
+</footer>
+</body>
+</html>
