@@ -280,7 +280,7 @@ table, th, td {
 }
 
 /*lager scrollebar nederst for kalenderen/tabell elementet slik at
-resten av siden ikke bevger seg. men at en kan scrolle for å se resterende 
+resten av siden ikke beveger seg. men at en kan scrolle for å se resterende 
 av kalanderen*/
 div.table-container {
     max-height: auto; /*kalenderen tar høyden den trenger*/
