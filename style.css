@@ -1,4 +1,4 @@
-/* generell kode for alle sidene*/
+/*Generell kode for alle sidene*/
 
 * {
     border: 0;
@@ -8,9 +8,9 @@
 }
 
 
-                /*For toppbanner*/
+/*For toppbanner*/
 
-/* Lager headeren, gir den gulbakgrunns farge*/
+/*Lager headeren, gir den gul bakgrunnsfarge*/
 .header {
     width: auto;
     background-color: rgb(255, 220, 0);
@@ -18,28 +18,28 @@
     text-align: center;
 }
 
-/* Luft rundt alle h1 overskrifter*/
+/*Luft rundt alle h1 overskrifter*/
 h1 {
-  padding: 30px;
+    padding: 30px;
 }
 
 /*Styler og plasserer logo i top banneret*/
 #oslometGulLogo {
-  display: block;
-  width: 80px;
-  height: 80px;
-  position: absolute;
-  top: 0px;
-  left: 0;
+    display: block;
+    width: 80px;
+    height: 80px;
+    position: absolute;
+    top: 0px;
+    left: 0;
 }
 
-/* sentrerer overskriften i toppbannerert */
+/*sentrerer overskriften i toppbannerert*/
 .overskrift {
     text-align: center;
     margin-top: 20px;
 }
 
-/* kode for å formatere drop down menyen*/
+/*kode for å formatere drop down menyen*/
 .dropbtn {
     background-color: #000000;
     color: white;
@@ -49,8 +49,8 @@ h1 {
     cursor: pointer;
 }
 
-/* plasserer meny knappen fast slik at det er plassert i høyere av toppbanner men har litt
- luft mellom seg selv og rullefelltet og toppen av siden.*/
+/*Plasserer meny knappen fast slik at det er plassert i høyere av toppbanner men har litt
+ luft mellom seg selv og rullefelltet og toppen av siden*/
 .dropdown {
     justify-content: first baseline;
     position: absolute;
@@ -58,17 +58,17 @@ h1 {
     top: 25px;
 }
 
-/* Skjuler innholdet i menyen før bruker holder mussen over menyknappen*/
+/*Skjuler innholdet i menyen før bruker holder mussen over menyknappen*/
 .dropdown-content {
     display: none;
     background-color: #aaa7a7;
     z-index: 1; /*gjør at dropdown menyen ligger over teksten bak slik at det er lett å lese teksten i dropdownmeny*/
     position: absolute;
-    right: 0; /* for dropdown menyen til å gå mot venstre når du holder musen over menyen */
+    right: 0; /*for dropdown menyen til å gå mot venstre når du holder musen over menyen*/
     top: 100%;
 }
 
-/* Formatering og styling av linker i dropdown menyen*/
+/*Formatering og styling av linker i dropdown menyen*/
 .dropdown-content a {
     color: black;
     padding: 12px 16px;
@@ -76,35 +76,35 @@ h1 {
     display: block;
 }
 
-/* Gjør fargen grå på dropdown meny  */
+/*Gjør fargen grå på dropdown meny*/
 .dropdown-content a:hover {
     background-color: #727171
 }
 
-/* Viser dropdown menyen når mussen holdes over menyknapp og selve dropdown menyen
-dropdown menyen forsvinenr når mussen flytter seg fra enten menykanppen eller dropdown.  */
+/*Viser dropdown menyen når musen holdes over menyknapp og selve dropdown menyen
+dropdown menyen forsvinenr når mussen flytter seg fra enten menykanppen eller dropdown*/
 .dropdown:hover .dropdown-content {
     display: block;
 }
 
 
+/*Bunntekst formatering*/
 
-                 /*Bunntekst formatering*/
-/* Lager bunnbanner, gir den gulbakgrunns farge*/
- .bunntekst {
+/*Lager bunnbanner, gir den gulbakgrunns farge*/
+.bunntekst {
     width: auto;
     height: auto;
     background-color: rgb(255, 220, 0);
     padding-bottom: 20px;
 }
 
-/* Sentrer teksten og gir padding så du får luft mellom teskt elementene */
-#tekstPlasseringBunnbanner{
+/*Sentrer teksten og gir padding så du får luft mellom teskt elementene*/
+#tekstPlasseringBunnbanner {
     text-align: center;
     padding: 10px;
 }
 
-/* styling av nyhetsbrevets boks og tekst*/
+/*styling av nyhetsbrevets boks og tekst*/
 .contact-box a {
     background-color: black;
     color: white;
@@ -112,13 +112,13 @@ dropdown menyen forsvinenr når mussen flytter seg fra enten menykanppen eller d
     padding: 15PX;
 }
 
-/* få luft mellom boks og elementer over og under*/
+/*få luft mellom boks og elementer over og under*/
 .container_nyhetsbrev {
     margin-top: 20PX;
     margin-bottom: 30PX;
 }
 
-/*styling av linjen og gir 30px i mellomrom til elementer rundt. */
+/*styling av linjen og gir 30px i mellomrom til elementer rundt*/
 hr {
     height: 1px;
     border-width: 0;
@@ -126,221 +126,211 @@ hr {
     margin: 30PX;
 }
 
-/*Gjør at span elementene for 20px mellomrom og når skjermen blir mindre vil 1 helt
-span elementet flyttes under de andre, så neste span element ettersom hvor skjermen blir mindre */
+/*Gjør at span elementene får 20px mellomrom og når skjermen blir mindre vil 1 helt
+span element flyttes under de andre, så neste span element ettersom hvor skjermen blir mindre*/
 .mellomrom-setning span {
-  margin: 0 20px;
-  padding-bottom: 10px;
-  display: inline-block;
+    margin: 0 20px;
+    padding-bottom: 10px;
+    display: inline-block;
 }
 
 
-/* bunnbanner ferdig */
+/*bunnbanner ferdig */
 
-/* mellomrom på 20 px*/
+/*mellomrom på 20 px*/
 .mellomrom-setning {
     margin-top: 20px;
 }
 
-/* mellomrom på 0 px*/
+/*mellomrom på 0 px*/
 .mellomrom-setning2 {
-  margin-top: 0px;
+    margin-top: 0px;
 }
 
 
-                /* Felles kode ferdig */
+/*Felleskode ferdig*/
 
-                /*CSS tilhører Hvoedsiden*/
+/*CSS tilhører Hovedsiden*/
 
-/*FORSIDEBILDE*/
+/*Forsidebilde*/
 #forsidebilde {
     display: block;
     margin: auto;
-    width: 100%; /* Gjør bildet responsivt og tilpasser seg siden*/
+    width: 100%; /*Gjør bildet responsivt og tilpasser seg siden*/
     height: auto;
-  }
+}
 
-  /*FORMATERING AV BILDER I ALLE SMÅ TEKSTBOKSER*/
-  #bilderiseksjon1 {
+/*Formatering av bilder i alle små tekstbokser*/
+#bilderiseksjon1 {
     border-radius: 8px;
     display: block;
     margin: auto;
     width: auto;
     height: 170px;
     padding: 5%;
-  }
+}
 
-  
-  /*LISTE i fakulteter-boksen*/
+/*Liste i fakulteter-boksen*/
 ul {
     text-align: left;
     /*Gjør at teksten kommer på linje, og at punktene er utenfor "boksen"*/
     list-style-position: outside;
     padding: 20px;
-  }
+}
   
-          /* kode for responsive grider på hoved siden og fasilitets siden*/
+/*kode for responsive grider på hoved siden og fasilitets siden*/
 
-  /* Lager grid for å plassere elementer i ruter slik at de automatisk 
-  justerer seg etter skjerm størrelsen.
+/*Lager grid for å plassere elementer i ruter slik at de automatisk 
+justerer seg etter skjerm størrelsen.
 
-  Bestemmer hvordan griden skal se ut; hvor mange ruter det er i 
-  griden og hvit luft mellom ruter og innhold i ruter
-  for hoved siden*/
-  .grid-container-1 {
+Bestemmer hvordan griden skal se ut; hvor mange ruter det er i 
+griden og hvit luft mellom ruter og innhold i ruter
+for hoved siden*/
+.grid-container-1 {
     display: grid;
-    grid-template-columns: repeat(3, 1fr); /*Hvor mange bokser i bredden, fr=fraction*/
+    grid-template-columns: repeat(3, 1fr); /*Hvor mange bokser i bredden, fr = fraction*/
     grid-template-rows: repeat(1, 1fr);
-    grid-auto-rows: minmax(100px, auto); /* Justerer boksene på samme rad automatisk større om teksen blir lenger enn det er plass til i den av boksene*/
+    grid-auto-rows: minmax(100px, auto); /*Justerer boksene på samme rad automatisk større om teksen blir lenger enn det er plass til i den av boksene*/
     gap: 1em; /*Mellomrom mellom boksene*/
     justify-content: center;
     margin: 50px;
-  }
+}
 
-  /*Styling av grid rammer for hoved siden*/
-  .grid-rammer-1 {
+/*Styling av grid rammer for hovedsiden*/
+.grid-rammer-1 {
     text-align: center;
     padding: 20px;
     border: 2px solid rgb(255, 220, 0); 
     background-color:rgb(255, 220, 0);
-  }
- 
-  
+}
+
 /*Bestemmer hvordan griden skal se ut; hvor mange ruter det er i 
-  griden og hvit luft mellom ruter og innhold i ruter
-  for fasilitet siden*/
-  .grid-container-2 {
-    justify-content: center; /* Sentrerer gridet horisontalt */
+griden og hvit luft mellom ruter og innhold i ruter
+for fasilitetssiden*/
+.grid-container-2 {
+    justify-content: center; /*Sentrerer gridet horisontalt*/
     margin: 50px;
     display: grid;
-    grid-template-columns: repeat(3, 1fr); /* tre kolonner med like stor bredde */
-    grid-template-rows: repeat(2, 1fr); /* to rader med like stor høyde */
-    gap: 20px; /*piksler avstand mellom rader og kolonner */
-  }
+    grid-template-columns: repeat(3, 1fr); /*tre kolonner med like stor bredde*/
+    grid-template-rows: repeat(2, 1fr); /*to rader med like stor høyde*/
+    gap: 20px; /*piksler avstand mellom rader og kolonner*/
+}
 
-  
-  /*Styling av grid rammer for fasilitet siden*/
-  .grid-rammer-2 {
+/*Styling av grid rammer for fasilitetssiden*/
+.grid-rammer-2 {
     text-align: center;
     padding: 20px;
     border: 2px solid rgb(255, 220, 0); 
-  }
+}
 
-
-  /* Endrer gridene for hoved- og fasilitet siden når skjerm størrelsen endres */
-
-  @media screen and (max-width: 1000px) {
-     /* Endrer hovedsidegridet slik at det har én kolonne og én rad når skjermen er 1000 piksler eller mindre bred. */
-      .grid-container-1 {
-        grid-template-columns: repeat(1, 1fr); /* En kolonne som tar all tilgjengelig bredde */
-        grid-template-rows: repeat(1, 1fr); /* En rad som tar all tilgjengelig høyde */
+/*Endrer gridene for hoved- og fasilitetssiden når skjermstørrelsen endres*/
+@media screen and (max-width: 1000px) {
+    /* Endrer hovedsidegridet slik at det har én kolonne og én rad når skjermen er 1000 piksler eller mindre bred. */
+    .grid-container-1 {
+        grid-template-columns: repeat(1, 1fr); /*En kolonne som tar all tilgjengelig bredde*/
+        grid-template-rows: repeat(1, 1fr); /*En rad som tar all tilgjengelig høyde*/
     }
   
-    /* Endrer fasilitetgridet slik at det har to kolonner og tre rader med proporsjonal størrelse når skjermen er 1000 piksler eller mindre bred. */
+    /*Endrer fasilitetgridet slik at det har to kolonner og tre rader med proporsjonal størrelse når skjermen er 1000 piksler eller mindre bred.*/
     .grid-container-2 {
-        grid-template-columns: repeat(2, 1fr); /* To kolonner som deler tilgjengelig bredde likt */
-        grid-template-rows: repeat(3, 1fr);   /* Tre rader som deler tilgjengelig høyde likt */
+        grid-template-columns: repeat(2, 1fr); /*To kolonner som deler tilgjengelig bredde likt*/
+        grid-template-rows: repeat(3, 1fr);   /*Tre rader som deler tilgjengelig høyde likt*/
     }
 }
   
 
-            /* Fasilitet side*/
+/*Fasilitetsside*/
 
-
-/* For å få mellomrom mellom bilder og tekst i grid på fasilitet grid */
-  .fasilitetB{
+/*For å få mellomrom mellom bilder og tekst i grid på fasilitet grid */
+.fasilitetB {
     margin: 20px;
-  }
-
+}
 
   
-        /* CSS for eventside */
-  #eventkalender {
-      text-align: center; /*Sentrerer teksten*/
-      }
+/*CSS for eventside*/
+
+#eventkalender {
+    text-align: center; /*Sentrerer teksten*/
+}
 
 .hero-image { /*heltebildet https://www.w3schools.com/howto/howto_css_hero_image.asp*/
-  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("bilder/kantine.jpg"); /*Lager en mørkere bakgrunnseffekt på bildet og gjør dermed teksten mer lesbar*/
-  /* Personlig bilde*/
-  height: 50%; /*Setter en spesifikk høyde*/
-  /*sentrerer og posisjonerer bildet sånn at det skalerer bra med alle skjermer*/
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-  position: relative;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("bilder/kantine.jpg"); /*Lager en mørkere bakgrunnseffekt på bildet og gjør dermed teksten mer lesbar*/
+    /* Personlig bilde*/
+    height: 50%; /*Setter en spesifikk høyde*/
+    /*sentrerer og posisjonerer bildet sånn at det skalerer bra med alle skjermer*/
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
 }
 
 .hero-text {
-  color: white; /*Setter overskriftens farge til hvit sånn at den blir mer lesbar*/
+    color: white; /*Setter overskriftens farge til hvit sånn at den blir mer lesbar*/
 }
 
 th {
-  background-color: rgb(255, 220, 0); /*Setter bakgrunnsfargen til den samme gulfargen som i headeren*/
+    background-color: rgb(255, 220, 0); /*Setter bakgrunnsfargen til den samme gulfargen som i headeren*/
 }
 
 table, th, td {
-  border: 2px solid black; /*2 piksler lager en tydelig linje mellom alle cellene*/
-  border-collapse: collapse; /*Dette gjør at kantene kollapser inn i en enkelt kant*/
-  width: auto; /*Alle elementene får den plassen de trenger*/
-  padding: 15px; /*Lager luft inni cellene mellom teksten og kantene*/
-  margin: 40px auto; /*Holder tabellen inntil venstre kant av skjerm og gir 40 px under tabell*/
+    border: 2px solid black; /*2 piksler lager en tydelig linje mellom alle cellene*/
+    border-collapse: collapse; /*Dette gjør at kantene kollapser inn i en enkelt kant*/
+    width: auto; /*Alle elementene får den plassen de trenger*/
+    padding: 15px; /*Lager luft inni cellene mellom teksten og kantene*/
+    margin: 40px auto; /*Holder tabellen inntil venstre kant av skjerm og gir 40 px under tabell*/
 }
 
-/* lager scrollebar nederst for kalenderen/tabell elementet slik at
+/*lager scrollebar nederst for kalenderen/tabell elementet slik at
 resten av siden ikke bevger seg. men at en kan scrolle for å se resterende 
 av kalanderen*/
 div.table-container {
-  max-height: auto; /* kalenderen tar høyden den trenger */
-  overflow-x: auto; /* Lager scrollebar for kalenderen  */
+    max-height: auto; /*kalenderen tar høyden den trenger*/
+    overflow-x: auto; /*Lager scrollebar for kalenderen*/
 }
 
 
+/*topical CSS*/
 
-
-              /* topical css
-
-  /* topical css*/
-  #tekstboks {
+#tekstboks {
     width: 70%;
     padding: 30px;
     border: 5px solid rgb(22, 19, 2);
     margin: 30px;
-    position: relative; left: 50%; /* Startposisjonen er 50% fra venstre */
-    transform: translate(-50%); /* Trekker boksen tilbake med halvparten av dens bredde*/ 
-   }
+    position: relative; left: 50%; /*Startposisjonen er 50% fra venstre*/
+    transform: translate(-50%); /*Trekker boksen tilbake med halvparten av dens bredde*/ 
+}
   
-   /*div for å plassere beskrivende liste av Maria Cruz ved siden av bilde*/
-   #mariaCruz {
+/*div for å plassere beskrivende liste av Maria Cruz ved siden av bilde*/
+#mariaCruz {
     display: flex;
     align-items: center;
     text-align: center;
-   }
+}
   
-   /*styler bildet ved siden av Maria Cruz beskrivende liste*/
-   #boston {
+/*styler bildet ved siden av Maria Cruz beskrivende liste*/
+#boston {
     max-width: 50%;
     margin-left: 10%;
-   }
+}
   
-   
-   /*styler bilde nederst på topical siden*/
-   #person_using_macbook_pro {
+/*styler bilde nederst på topical siden*/
+#person_using_macbook_pro {
     display: block;
     margin-left: auto;
     margin-right: auto;
     width: 50%;
-   }
+}
   
-  /*toppbanner på topicalsiden*/
-  #headerTopical {
+/*toppbanner på topicalsiden*/
+#headerTopical {
     width: auto;
     background-color: rgb(171, 205, 253);
     height: 100px;
     text-align: center;
-  }
+}
   
-  /*bunnbanner på topicalsiden*/
-  .bunntekstTopical {
+/*bunnbanner på topicalsiden*/
+.bunntekstTopical {
     width: auto;
     height: auto;
     background-color: rgb(171, 205, 253);
@@ -348,10 +338,12 @@ div.table-container {
 }
 
 
+/*Accessibility CSS*/
 
-
-
-
-
-
-
+/*CSS for bilder i accessibility*/
+.accessibility-bilder {
+    /*Lager litt luft mellom tekst og bilder, og bildet skaleres med størrelsen på skjermen*/
+    padding: 1px;
+    height: auto;
+    max-width: 100%;
+}
