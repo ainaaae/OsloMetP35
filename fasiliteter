@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Document</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="icon" type="image/jpg" href="bilder/oslometGul.png">
+  <!--https://foto.oslomet.no/fotoweb/archives/5019-Teams-Zoom-bakgrunner/Folder%2052/Bakgrunn_gul.png.info#c=%2Ffotoweb%2Farchives%2F5019-Teams-Zoom-bakgrunner%2F
+  Har kroppet bilde for å bare ha logo med gul bakgrunn, så den passer som fane ikon-->
+</head>
+
+<body>
+  <!--Topp banner-->
+  <header>
+    <div class="header">
+      <h1 class="OverskriftToppB">Pilstredet 35: Ellen Gleditschs hus</h1>
+      <img id="oslometGulLogo" src="bilder/oslometsvart, bare øvredel.png" alt="Oslomet-logoen">
+      <!--Kilde: https://foto.oslomet.no/fotoweb/archives/5005-OsloMet-logo/Folder%2052/Logomedsignatur_OsloMet-01.png.info#c=%2Ffotoweb%2Farchives%2F5005-OsloMet-logo%2F
+      har tatt bort teksten under så du bare får Oslomet i skrå fra bildet. -->
+    </div>
+
+    <!--droppdaown meny-->
+    <div class="dropdown">
+      <button class="dropbtn"> Meny</button>
+      <div class="dropdown-content">
+        <a href="index.html">Hovedside</a>
+        <a href="kalender.html">Eventer</a>
+        <a href="topical.html">Topical</a>
+      </div>
+    </div>
+  </header>
+
+
+    <div class="overskrift">
+      <h1>Fasiliteter</h1>
+    </div>
+
+    <!--Grid med bilder og teskt med fasiliteter p35 har-->
+    <div class="grid-container-2">
+
+      <!--Datatorget-->
+      <div class="grid-rammer-2">
+        <h3>Datatorget</h3>
+        <img class="fasilitetB" src="bilder/Datatorget.jpg" alt="bilde av inngang til datatorget">
+        <!--Personlig bilde-->
+        <p>I p 35 har vi et datatorg for it studenter. Her kan en sitte sammen og jobbe på tvers av linjer.
+          Her holder Orakel til på tirsdager og Torsdager og kan hjelpe til med obliger og svare
+          på spørsmål.
+        </p>
+      </div>
+
+      <!--Klatrevegg-->
+      <div class="grid-rammer-2">
+        <h3>Klatrevegg</h3>
+        <img class="fasilitetB" src="bilder/klatrevegg.jpg" alt="bilde av klatre vegg i P35">
+        <!--Personlig bilde-->
+        <p> I p35 har vi vår helt egne klatre vegg som strekker seg over 8 etasjer.
+          Klatreveggen er åpen for alle som ønkser å klatre på tirsdager i regi av klatreforeningen på oslomet.
+          Her er det fult mulig å leie av av utstyr og bli med på en gøy kveld med klatring og bli kjent med nye med
+          elever!
+        </p>
+      </div>
+
+      <!--Bibliotek-->
+      <div class="grid-rammer-2">
+        <h3>Bibliotek</h3>
+        <img class="fasilitetB" src="bilder/biblioteket.jpg" alt="bilde av inngang til biblioteket i P35">
+        <!--Personlig bilde-->
+        <p>
+          Biblioteket er lokalisert i 4 etasje rett ved heisene i pilstredet 35.
+          Her finnes det en rekke fagbøker og ficiton bøker, alt etter hva en selv ønkser.
+          Biblioteket er bemannet fra 08.00-16.00. Men for olsoMet Studenter er det mulig
+          å låse seg inn med studentkortet sitt.
+        </p>
+      </div>
+
+      <!--Kantinen-->
+      <div class="grid-rammer-2">
+        <h3>Olaf Spiseri</h3>
+        <img class="fasilitetB" src="bilder/kantine.jpg" alt="bilde av inngang til datatorget">
+        <!--Personlig bilde-->
+        <p>
+          Olaf's spiseri er kantinen på pilstredet 35.
+          Vi har en nydelig salatbar og hverdag er det en unik varmmat buffe.
+        </p>
+        <p>
+          Kantinen er åpen fra 08.00-15.00
+          og varmat serveres fra 11.00.
+        </p>
+      </div>
+
+      <!--Makerspace-->
+      <div class="grid-rammer-2">
+        <h3>Makerspace</h3>
+        <img class="fasilitetB" src="bilder/Makerspace.jpg" alt="bilde av inngang til Makerspace">
+        <!--Personlig bilde-->
+        <p> Makerspace er plassert i første etasje på pilstredet 35.
+          Makerspace tilbyr en rekke kurs som: Laserkutting, trearbeid, 3D-printing,
+          og mye mer!
+        <div class="mellomrom-setning2"></div>
+        Makerspace er åpent fra kl 08.00-19.00.
+        </p>
+      </div>
+
+      <!--Stillesal-->
+      <div class="grid-rammer-2">
+        <h3>Stillesal</h3>
+        <img class="fasilitetB" src="bilder/stillesone.jpg" alt="bilde av inngang til Stillesone">
+        <!--Personlig bilde-->
+        <p> Stillesalen er lokalisert i frøste etasje rett ved hovedaudititoriet
+          PH170. Her kan studenter lese hele dagen i stille omgivlers uten å bli forstyrret
+          av medstudenter.
+        </p>
+      </div>
+    </div>
+
+    <!--Bunn banner-->
+
+    <footer>
+      <div class="bunntekst">
+        <div id="tekstPlasseringBunnbanner">
+
+          <div class="container_nyhetsbrev">
+            <h3>Hold deg oppdatert på hva som skjer på OsloMet.</h3>
+          </div>
+          <!-- Container for kontaktkassen -->
+          <div class="contact-box">
+            <h3>
+              <a href="mailto:Pilstredet35@oslomet.no"> Abonner på vårt Nyhetsbrev!</a>
+            </h3>
+          </div>
+
+          <!--Lager grålinje mellom kontaktboksen og Oslo Metropolitan-->
+          <hr>
+
+          <h3>OSLO METROPOLITAN UNIVERSITY
+            <div class="mellomrom-setning2"> STORBYUNIVERSITETET
+          </h3>
+
+
+          <!-- Container for adressen og kontaktinformasjonen -->
+          <div class="mellomrom-setning">
+            <!-- Individuelle span-elementer for hver linje med adresse og kontaktinformasjon -->
+            <span>Pilstredet 35</span>
+            <span>Postboks 4, St. Olavs plass</span>
+            <span>0130 Oslo</span>
+            <span>Tlf 67 23 50 00</span>
+          </div>
+
+        </div>
+    </footer>
+  </body>
+</html>
