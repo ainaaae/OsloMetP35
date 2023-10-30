@@ -51,7 +51,7 @@ h1 {
 /*Plasserer meny knappen fast slik at det er plassert i høyere av toppbanner men har litt
  luft mellom seg selv og rullefelltet og toppen av siden*/
 .dropdown {
-    justify-content: first baseline;
+    justify-content: first baseline; /*ERROR: "first" is not a "justify-content" value */
     position: absolute;
     right: 3%;
     top: 25px;
@@ -199,8 +199,8 @@ for hoved siden*/
 .grid-rammer-1 {
     text-align: center;
     padding: 20px;
-    border: 2px solid rgb(255, 220, 0); 
-    background-color:rgb(255, 220, 0);
+    border: 2px solid rgb(255, 220, 0); /*ERROR: Same color for background and border*/
+    background-color:rgb(255, 220, 0); /*ERROR: Same color for background and border*/
 }
 
 /*Bestemmer hvordan griden skal se ut; hvor mange ruter det er i 
@@ -283,7 +283,7 @@ table, th, td {
 resten av siden ikke beveger seg. men at en kan scrolle for å se resterende 
 av kalanderen*/
 div.table-container {
-    max-height: auto; /*kalenderen tar høyden den trenger*/
+    max-height: auto; /*kalenderen tar høyden den trenger*/ /*ERROR: "auto" is not a "max height" value */
     overflow-x: auto; /*Lager scrollebar for kalenderen*/
 }
 
