@@ -160,7 +160,7 @@ span element flyttes under de andre, så neste span element ettersom hvor skjerm
 }
 
 /*Formatering av bilder i alle små tekstbokser*/
-#bilderiseksjon1 {
+.bilderiseksjon1 {
     border-radius: 8px;
     display: block;
     margin: auto;
