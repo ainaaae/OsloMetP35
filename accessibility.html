@@ -2,31 +2,33 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Accessibility</title>
-    <link rel="stylesheet" href="index.css" />
-    <link rel="icon" type="image/jpg" href="Images/Oslometgul.png">
+    <link rel="stylesheet" href="style.css" >
+    <link rel="icon" type="image/jpg" href="Images/oslomet_gul.png">
 </head>
 <body>
 <!--Topp banner-->
 <header>
     <div class="header">
         <h1>Pilstredet 35: Ellen Gleditschs hus</h1>
-        <img id="oslometGulLogo" src="Images/oslometsvart, bare øvredel.png" alt="Oslomet-logoen">
+        <img id="oslometGulLogo" src="Images/oslomet_svart_bare_øvre_del.png" alt="Oslomet-logoen">
         <!--Kilde: https://foto.oslomet.no/fotoweb/archives/5005-OsloMet-logo/Folder%2052/Logomedsignatur_OsloMet-01.png.info#c=%2Ffotoweb%2Farchives%2F5005-OsloMet-logo%2F
         har tatt bort teksten under så du bare får Oslomet i skrå fra bildet. -->
     </div>
-    <!--droppdaown meny-->
+    <!--droppdown meny-->
     <div class="dropdown">
         <button class="dropbtn"> Meny</button>
         <div class="dropdown-content">
             <a href="index.html">Hovedside</a>
-            <a href="Kalender.html">Eventer</a>
-            <a href="Fasiliteter.html">Fasiliteter</a>
+            <a href="fasiliteter.html">Fasiliteter</a>
+            <a href="kalender.html">Eventer</a>
+            <a href="topical.html">Topical</a>
         </div>
     </div>
 </header>
 <main>
-    <div id="tekstboks">
+    <div class="tekstboks">
         <div class="mellomrom-setning">
             <h2>DATA1200: Accessibility</h2>
             <p>Short presentation of accessibility for your site. Test your site with an automated test. Write a very short text (about 400-500 words) about how you tested the code for accessibility using this automated test. Tell us how you checked, and coding choices you made for universal design beyond what an automated test could tell you. You are recommended to use screenshots from the testing site and of your code – lack of images may affect your score.</p>
@@ -46,7 +48,7 @@
             <a href="https://webaim.org/resources/contrastchecker/?fbclid=IwAR2dlEEVZ0B8521wKPoe0YfdIyAsacs4ossAxBu2us5goBmCK77N1abqgq4"><strong>WebAIM (Web Accessibility in mind):</strong></a>
         </div>
         <div class="mellomrom-setning"></div>
-            <img class="accessibility-Images" src="Images/contrast_checker.png" alt="Bildet av kontrasttesten">
+            <img class="accessibilityBilder" src="Images/contrast_checker.png" alt="Bildet av kontrasttesten">
             <p>Kontrasttesten i WebAIM har vist svært positive resultater. Den bekrefter at tekst og annet innhold på nettstedet har tilstrekkelig kontrast mot bakgrunnen, noe som forbedrer lesbarheten og tilgjengeligheten. Dette er et viktig skritt for å sikre at alle brukere, inkludert de med nedsatt syn, kan få en mer komfortabel og effektiv opplevelse på nettstedet.</p>
         <div class="mellomrom-setning">
             <h2>Responsivt design</h2>

@@ -160,7 +160,7 @@ span element flyttes under de andre, så neste span element ettersom hvor skjerm
 }
 
 /*Formatering av bilder i alle små tekstbokser*/
-.bilderiseksjon1 {
+.bilderISeksjon1eksjon1 {
     border-radius: 8px;
     display: block;
     margin: auto;
@@ -177,14 +177,14 @@ ul {
     padding: 20px;
 }
   
-/*kode for responsive grider på hoved siden og fasilitets siden*/
+/*kode for responsive grider på hovedsiden og fasilitetssiden*/
 
 /*Lager grid for å plassere elementer i ruter slik at de automatisk 
-justerer seg etter skjerm størrelsen.
+justerer seg etter skjermstørrelsen.
 
 Bestemmer hvordan griden skal se ut; hvor mange ruter det er i 
 griden og hvit luft mellom ruter og innhold i ruter
-for hoved siden*/
+for hovedsiden*/
 .grid-container-1 {
     display: grid;
     grid-template-columns: repeat(3, 1fr); /*Hvor mange bokser i bredden, fr = fraction*/
@@ -253,8 +253,8 @@ for fasilitetssiden*/
 }
 
 .hero-image { /*heltebildet https://www.w3schools.com/howto/howto_css_hero_image.asp*/
-    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("bilder/kantine.jpg"); /*Lager en mørkere bakgrunnseffekt på bildet og gjør dermed teksten mer lesbar*/
-    /* Personlig bilde*/
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("Images/kantine.jpg"); /*Lager en mørkere bakgrunnseffekt på bildet og gjør dermed teksten mer lesbar*/
+    /*Personlig bilde*/
     height: 50%; /*Setter en spesifikk høyde*/
     /*sentrerer og posisjonerer bildet sånn at det skalerer bra med alle skjermer*/
     background-position: center;
@@ -290,7 +290,7 @@ div.table-container {
 
 /*topical CSS*/
 
-#tekstboks {
+.tekstboks {
     width: 70%;
     padding: 30px;
     border: 5px solid rgb(22, 19, 2);
@@ -340,7 +340,7 @@ div.table-container {
 /*Accessibility CSS*/
 
 /*CSS for bilder i accessibility*/
-.accessibility-bilder {
+.accessibilityBilder {
     /*Lager litt luft mellom tekst og bilder, og bildet skaleres med størrelsen på skjermen*/
     padding: 1px;
     height: auto;
