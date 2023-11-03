@@ -140,11 +140,6 @@ span element flyttes under de andre, så neste span element ettersom hvor skjerm
     margin-top: 20px;
 }
 
-/*mellomrom på 0 px*/
-.mellomrom-setning2 {
-    margin-top: 0;
-}
-
 
 /*Felleskode ferdig*/
 
@@ -268,7 +263,7 @@ for at gridet skal passe til skjerm størrelsen*/
     text-align: center; /*Sentrerer teksten*/
 }
 
-.hero-image { /*heltebildet https://www.w3schools.com/howto/howto_css_hero_image.asp*/
+#hero-image { /*heltebildet https://www.w3schools.com/howto/howto_css_hero_image.asp*/
     background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("Images/kantine.jpg"); /*Lager en mørkere bakgrunnseffekt på bildet og gjør dermed teksten mer lesbar*/
     /*Personlig bilde*/
     height: 50%; /*Setter en spesifikk høyde*/
@@ -279,8 +274,10 @@ for at gridet skal passe til skjerm størrelsen*/
     position: relative;
 }
 
-.hero-text {
+#hero-text {
     color: white; /*Setter overskriftens farge til hvit sånn at den blir mer lesbar*/
+    font-size: large;
+    padding: 30px;
 }
 
 th {
@@ -373,6 +370,6 @@ ol {
     display: block;
     margin-left: auto;
     margin-right: auto;
-    padding: 1px;
+    padding-top: 10px;
     max-width: 100%;
 }
