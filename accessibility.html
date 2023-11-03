@@ -35,27 +35,35 @@
         <h2 class="overskrift">DATA1200: Accessibility</h2>
 
         <div class="mellomrom-setning">
-            <p>Short presentation of accessibility for your site. Test your site with an automated test. Write a very
-                short text (about 400-500 words) about how you tested the code for accessibility using this automated
-                test. Tell us how you checked, and coding choices you made for universal design beyond what an automated
-                test could tell you. You are recommended to use screenshots from the testing site and of your code –
-                lack of images may affect your score.</p>
+            <h3>WAVE - Automatisk test</h3>
+            <p>Det er viktig å sørge for at alle brukere, uavhengig av funksjonshemninger, har en jevn, meningsfull og
+                likeverdig opplevelse når de besøker nettsider. En viktig ressurs i denne prosessen er WAVE (Web
+                Accessibility Evaluation Tool). WAVE er et kraftig verktøy for automatisk testing av nettsiders
+                tilgjengelighet som gir innsikt og veiledning for å avdekke og løse tilgjengelighetsproblemer på en
+                nettside.</p>
         </div>
 
         <div class="mellomrom-setning">
-            <h3>WAVE</h3>
-            <p>Testing av nettsiders tilgjengelighet har blitt en uunnværlig praksis for utviklere og designere i dagens
-                digitale verden. Det er viktig å sørge for at alle brukere, uavhengig av funksjonshemninger, har en
-                jevn, meningsfull og likeverdig opplevelse når de besøker nettsider. En viktig ressurs i denne prosessen
-                er WAVE (Web Accessibility Evaluation Tool). WAVE er et kraftig verktøy for automatisk testing av
-                nettsiders tilgjengelighet som gir innsikt og veiledning for å avdekke og løse tilgjengelighetsproblemer
-                på en nettside. På dette grunnlaget benytter vi oss av dette programmet til å teste vår nettside.</p>
+            <a href="https://wave.webaim.org/?fbclid=IwAR1IQmriPF7ATMGhfSAZQVmAFxpxlrXk4leQPds0T8ocOPyMM9eW0hc-8b4">
+                <strong>WAVE (Web Accessibility Evaluation Tool)</strong></a>
         </div>
 
         <div class="mellomrom-setning">
-            <a href="https://wave.webaim.org/?fbclid=IwAR1IQmriPF7ATMGhfSAZQVmAFxpxlrXk4leQPds0T8ocOPyMM9eW0hc-8b4"><strong>WAVE
-                (Web Accessibility Evaluation Tool):</strong></a>
+            <p>Resultater:
+                Ingen feil ble oppdaget. Manuell testing er fortsatt nødvendig for å sikre samsvar og optimal
+                tilgjengelighet. Det var kun en bemerkning om at vi hadde hoppet over et heading nivå, dette har vi
+                korrigert. På en tidligere test fikk vi også noen bemerkninger om noen div elementer som manglet end
+                tags og en div inne i et H3 element.
+            </p>
         </div>
+
+        <img class="accessibilityBilder" src="Images/wave_test.png" alt="Bildet av wave-testen">
+        <img class="accessibilityBilder" src="Images/h1_til_h2.png"
+             alt="Bildet som viser feil og retting av heading nivå">
+        <img class="accessibilityBilder" src="Images/div_i_h3.png" alt="Bildet  som viser feil og retting av div i h3">
+        <img class="accessibilityBilder" src="Images/end_tags.png"
+             alt="Bildet som viser at det mangler en end tag og rettelsen av det">
+
 
         <div class="mellomrom-setning">
             <h3>Manuelle tester</h3>
@@ -66,17 +74,15 @@
 
         <div class="mellomrom-setning">
             <a href="https://webaim.org/resources/contrastchecker/?fbclid=IwAR2dlEEVZ0B8521wKPoe0YfdIyAsacs4ossAxBu2us5goBmCK77N1abqgq4"><strong>WebAIM
-                (Web Accessibility in mind):</strong></a>
+                (Web Accessibility in mind)</strong></a>
         </div>
 
-        <div class="mellomrom-setning">
-            <img class="accessibilityBilder" src="Images/contrast_checker.png" alt="Bildet av kontrasttesten">
-            <p>Kontrasttesten i WebAIM har vist svært positive resultater. Den bekrefter at tekst og annet innhold på
-                nettstedet har tilstrekkelig kontrast mot bakgrunnen, noe som forbedrer lesbarheten og
-                tilgjengeligheten.
-                Dette er et viktig skritt for å sikre at alle brukere, inkludert de med nedsatt syn, kan få en mer
-                komfortabel og effektiv opplevelse på nettstedet.</p>
-        </div>
+        <img class="accessibilityBilder" src="Images/contrast_checker.png" alt="Bildet av kontrasttesten">
+        <p>Kontrasttesten i WebAIM har vist svært positive resultater. Den bekrefter at tekst og annet innhold på
+            nettstedet har tilstrekkelig kontrast mot bakgrunnen, noe som forbedrer lesbarheten og
+            tilgjengeligheten.
+            Dette er et viktig skritt for å sikre at alle brukere, inkludert de med nedsatt syn, kan få en mer
+            komfortabel og effektiv opplevelse på nettstedet.</p>
 
         <div class="mellomrom-setning">
             <h3>Responsivt design</h3>
@@ -87,16 +93,47 @@
         </div>
 
         <div class="mellomrom-setning">
+            <h3>HTML- og CSS-validatortester</h3>
+            <p>Vi brukte HTML-validatoren <a href="https://validator.w3.org/">(https://validator.w3.org/)</a>
+                for å finne feil og for å få ryddet opp i unødvendig kode. Her fant vi ulike former
+                for feil som for eksempel:</p>
+            <ul>
+                <li>
+                    Vi hadde et par unødvendige skråstreker
+                </li>
+                <li>
+                    Feilmeldinger på attributter
+                </li>
+                <li>
+                    Navn på bilder kunne ikke inneholde mellomrom
+                </li>
+                <li>
+                    Elementer som ikke var lukket
+                </li>
+                <li>
+                    Unøyaktig bruk av headere som H1 og H3.
+                </li>
+            </ul>
+            <p>Vi brukte CSS-validatoren <a href="https://jigsaw.w3.org/css-validator/">
+                (https://jigsaw.w3.org/css-validator/)</a>
+                for å sjekke at CSS-koden er gyldig og
+                riktig strukturert. Disse feilmeldingene har vi rettet opp i:</p>
+            <img src="Images/css_test.png" class="accessibilityBilder" alt="Bilde av feil vist i testen">
+            <img src="Images/css_feil.png" class="accessibilityBilder" alt="Bilde av feilene i CSS fila">
+        </div>
+
+        <div class="mellomrom-setning">
             <h3>Brukertest</h3>
             <p>Selv om tidsbegrensninger hindret oss i å gjennomføre brukertesting med kandidater med
                 funksjonsnedsettelser, er bevisstheten om viktigheten av tilgjengelighet økt. Vi forplikter oss til å
                 inkludere slik testing i fremtidige revisjoner og forbedringer av nettstedet for å sikre en inkluderende
                 opplevelse for alle brukere.</p>
         </div>
+
     </div>
 </main>
 
-<!--Bunn banner-->
+<!--Bunnbanner-->
 <footer>
     <div class="bunntekst">
         <div id="tekstPlasseringBunnbanner">
@@ -115,7 +152,7 @@
             <hr>
 
             <h3>OSLO METROPOLITAN UNIVERSITY</h3>
-            <h3 class="mellomrom-setning2">STORBYUNIVERSITETET</h3>
+            <h3>STORBYUNIVERSITETET</h3>
 
             <!-- Container for adressen og kontaktinformasjonen -->
             <div class="mellomrom-setning">
