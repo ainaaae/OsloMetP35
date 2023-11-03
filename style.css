@@ -28,7 +28,7 @@ h1 {
     width: 80px;
     height: 80px;
     position: absolute;
-    top: 0px;
+    top: 0;
     left: 0;
 }
 
@@ -51,7 +51,6 @@ h1 {
 /*Plasserer meny knappen fast slik at det er plassert i høyere av toppbanner men har litt
  luft mellom seg selv og rullefelltet og toppen av siden*/
 .dropdown {
-    justify-content: first baseline; /*ERROR: "first" is not a "justify-content" value */
     position: absolute;
     right: 3%;
     top: 25px;
@@ -143,7 +142,7 @@ span element flyttes under de andre, så neste span element ettersom hvor skjerm
 
 /*mellomrom på 0 px*/
 .mellomrom-setning2 {
-    margin-top: 0px;
+    margin-top: 0;
 }
 
 
@@ -160,7 +159,7 @@ span element flyttes under de andre, så neste span element ettersom hvor skjerm
 }
 
 /*Formatering av bilder i alle små tekstbokser*/
-.bilderISeksjon1eksjon1 {
+.bilderISeksjon1 {
     border-radius: 8px;
     display: block;
     margin: auto;
@@ -176,7 +175,7 @@ ul {
     list-style-position: outside;
     padding: 20px;
 }
-  
+
 /*kode for responsive grider på hovedsiden og fasilitetssiden*/
 
 /*Lager grid for å plassere elementer i ruter slik at de automatisk 
@@ -200,7 +199,7 @@ for hovedsiden*/
     text-align: center;
     padding: 20px;
     border: 2px solid rgb(255, 220, 0); /*ERROR: Same color for background and border*/
-    background-color:rgb(255, 220, 0); /*ERROR: Same color for background and border*/
+    background-color: rgb(255, 220, 0); /*ERROR: Same color for background and border*/
 }
 
 /*Bestemmer hvordan griden skal se ut; hvor mange ruter det er i 
@@ -219,33 +218,50 @@ for fasilitetssiden*/
 .grid-rammer-2 {
     text-align: center;
     padding: 20px;
-    border: 2px solid rgb(255, 220, 0); 
+    border: 2px solid rgb(255, 220, 0);
 }
 
-/*Endrer gridene for hoved- og fasilitetssiden når skjermstørrelsen endres*/
+/* Endrer gridene for hoved- og fasilitet siden når skjerm blir midnre enn 100px*/
 @media screen and (max-width: 1000px) {
+
     /* Endrer hovedsidegridet slik at det har én kolonne og én rad når skjermen er 1000 piksler eller mindre bred. */
     .grid-container-1 {
-        grid-template-columns: repeat(1, 1fr); /*En kolonne som tar all tilgjengelig bredde*/
-        grid-template-rows: repeat(1, 1fr); /*En rad som tar all tilgjengelig høyde*/
+        grid-template-columns: repeat(1, 1fr);
+        /* En kolonne som tar all tilgjengelig bredde */
+        grid-template-rows: repeat(1, 1fr);
+        /* En rad som tar all tilgjengelig høyde */
     }
-  
-    /*Endrer fasilitetgridet slik at det har to kolonner og tre rader med proporsjonal størrelse når skjermen er 1000 piksler eller mindre bred.*/
+
+    /* Endrer fasilitetgridet slik at det har to kolonner og tre rader med proporsjonal størrelse når skjermen er 1000 piksler eller mindre bred. */
     .grid-container-2 {
-        grid-template-columns: repeat(2, 1fr); /*To kolonner som deler tilgjengelig bredde likt*/
-        grid-template-rows: repeat(3, 1fr);   /*Tre rader som deler tilgjengelig høyde likt*/
+        grid-template-columns: repeat(2, 1fr);
+        /* To kolonner som deler tilgjengelig bredde likt */
+        grid-template-rows: repeat(3, 1fr);
+        /* Tre rader som deler tilgjengelig høyde likt */
     }
 }
-  
+
 
 /*Fasilitetsside*/
+
+/*Endrer gridene for fasilitet siden når skjerm blir idnre enn 750px
+for at gridet skal passe til skjerm størrelsen*/
+@media screen and (max-width: 750px) {
+    /* Endrer fasilitetgridet slik at det har en kolonner og seks rader med proporsjonal størrelse når skjermen er 1000 piksler eller mindre bred. */
+    .grid-container-2 {
+        grid-template-columns: repeat(1, 1fr);
+        /* To kolonner som deler tilgjengelig bredde likt */
+        grid-template-rows: repeat(6, 1fr);
+        /* Tre rader som deler tilgjengelig høyde likt */
+    }
+}
 
 /*For å få mellomrom mellom bilder og tekst i grid på fasilitet grid */
 .fasilitetB {
     margin: 20px;
 }
 
-  
+
 /*CSS for eventside*/
 
 #eventkalender {
@@ -283,7 +299,6 @@ table, th, td {
 resten av siden ikke beveger seg. men at en kan scrolle for å se resterende 
 av kalanderen*/
 div.table-container {
-    max-height: auto; /*kalenderen tar høyden den trenger*/ /*ERROR: "auto" is not a "max height" value */
     overflow-x: auto; /*Lager scrollebar for kalenderen*/
 }
 
@@ -295,31 +310,44 @@ div.table-container {
     padding: 30px;
     border: 5px solid rgb(22, 19, 2);
     margin: 30px;
-    position: relative; left: 50%; /*Startposisjonen er 50% fra venstre*/
-    transform: translate(-50%); /*Trekker boksen tilbake med halvparten av dens bredde*/ 
+    position: relative;
+    left: 50%; /*Startposisjonen er 50% fra venstre*/
+    transform: translate(-50%); /*Trekker boksen tilbake med halvparten av dens bredde*/
 }
-  
+
 /*div for å plassere beskrivende liste av Maria Cruz ved siden av bilde*/
 #mariaCruz {
     display: flex;
     align-items: center;
     text-align: center;
+    padding: 10px;
 }
-  
+
+dd {
+    margin-bottom: 15px;
+}
+
+ol {
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
 /*styler bildet ved siden av Maria Cruz beskrivende liste*/
 #boston {
+    width: 400px;
     max-width: 50%;
     margin-left: 10%;
 }
-  
+
 /*styler bilde nederst på topical siden*/
 #person_using_macbook_pro {
     display: block;
     margin-left: auto;
     margin-right: auto;
+    margin-top: 20px;
     width: 50%;
 }
-  
+
 /*toppbanner på topicalsiden*/
 #headerTopical {
     width: auto;
@@ -327,7 +355,7 @@ div.table-container {
     height: 100px;
     text-align: center;
 }
-  
+
 /*bunnbanner på topicalsiden*/
 .bunntekstTopical {
     width: auto;
@@ -341,8 +369,10 @@ div.table-container {
 
 /*CSS for bilder i accessibility*/
 .accessibilityBilder {
-    /*Lager litt luft mellom tekst og bilder, og bildet skaleres med størrelsen på skjermen*/
+    /*Lager litt luft mellom tekst og bilder, sentrerer bildet og bildet skaleres med størrelsen på skjermen*/
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
     padding: 1px;
-    height: auto;
     max-width: 100%;
 }
