@@ -312,11 +312,6 @@ div.table-container {
     transform: translate(-50%); /*Trekker boksen tilbake med halvparten av dens bredde*/
 }
 
-#overskrfit{
-text-align: center;
-padding-top: 20px;
-}
-
 /*div for å plassere beskrivende liste av Maria Cruz ved siden av bilde*/
 #mariaCruz {
     display: flex;
