@@ -301,7 +301,7 @@ div.table-container {
 
 
 /*topical CSS*/
-
+/*styler den normale teksten på topical*/
 .tekstboks {
     width: 70%;
     padding: 30px;
@@ -319,11 +319,11 @@ div.table-container {
     text-align: center;
     padding: 10px;
 }
-
+/*redigerer mellomrom i beskrivelsen av liste-elementer i <dl> lista*/
 dd {
     margin-bottom: 15px;
 }
-
+/*redigerer mellomrom i den nummererte lista*/
 ol {
     margin-top: 10px;
     margin-bottom: 10px;
