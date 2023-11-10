@@ -56,7 +56,7 @@ h1 {
     top: 25px;
 }
 
-/*Skjuler innholdet i menyen før bruker holder mussen over menyknappen*/
+/*Skjuler innholdet i menyen før bruker holder musen over menyknappen*/
 .dropdown-content {
     display: none;
     background-color: #aaa7a7;
@@ -111,7 +111,7 @@ dropdown menyen forsvinenr når mussen flytter seg fra enten menykanppen eller d
 }
 
 /*få luft mellom boks og elementer over og under*/
-.container_nyhetsbrev {
+.containerNyhetsbrev {
     margin-top: 20PX;
     margin-bottom: 30PX;
 }
@@ -193,8 +193,7 @@ for hovedsiden*/
 .grid-rammer-1 {
     text-align: center;
     padding: 20px;
-    border: 2px solid rgb(255, 220, 0); /*ERROR: Same color for background and border*/
-    background-color: rgb(255, 220, 0); /*ERROR: Same color for background and border*/
+    background-color: rgb(255, 220, 0);
 }
 
 /*Bestemmer hvordan griden skal se ut; hvor mange ruter det er i 
@@ -319,10 +318,12 @@ div.table-container {
     text-align: center;
     padding: 10px;
 }
+
 /*redigerer mellomrom i beskrivelsen av liste-elementer i <dl> lista*/
 dd {
     margin-bottom: 15px;
 }
+
 /*redigerer mellomrom i den nummererte lista*/
 ol {
     margin-top: 10px;
@@ -337,7 +338,7 @@ ol {
 }
 
 /*styler bilde nederst på topical siden*/
-#person_using_macbook_pro {
+#personUsingMacbookPro {
     display: block;
     margin-left: auto;
     margin-right: auto;

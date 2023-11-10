@@ -9,6 +9,7 @@
     <!--https://foto.oslomet.no/fotoweb/archives/5019-Teams-Zoom-bakgrunner/Folder%2052/Bakgrunn_gul.png.info#c=%2Ffotoweb%2Farchives%2F5019-Teams-Zoom-bakgrunner%2F
     Har kroppet bilde for å bare ha logo med gul bakgrunn, så den passer som faneikon-->
 </head>
+
 <body>
 <!--Toppbanner-->
 <header>
@@ -31,11 +32,12 @@
         </div>
     </div>
 </header>
+
 <main>
-    <div class="tekstboks">
+    <div class="tekstboks"> <!--En div som samler alt innholdet i main inne i en stor boks-->
         <h2 class="overskrift">DATA1200: Accessibility</h2>
 
-        <div class="mellomrom-setning">
+        <div class="mellomrom-setning"> <!--Div klasse som lager mellomrom-->
             <h3>WAVE - Automatisk test</h3>
             <p>Det er viktig å sørge for at alle brukere, uavhengig av funksjonshemninger, har en jevn, meningsfull og
                 likeverdig opplevelse når de besøker nettsider. En viktig ressurs i denne prosessen er WAVE (Web
@@ -58,10 +60,16 @@
             </p>
         </div>
 
+        <!--Bilde av wave-testen med alerts-->
         <img class="accessibilityBilder" src="Images/wave_test.png" alt="Bildet av wave-testen">
+        <!--Bilde av feil heading nivå. Endret fra h1 til h2 etter feil i wave-testen.
+        Feilen kom av at vi gikk fra h1 til h3 uten en h2 mellom-->
         <img class="accessibilityBilder" src="Images/h1_til_h2.png"
              alt="Bildet som viser feil og retting av heading nivå">
+        <!--Bilde som viser at vi først hadde en div inni en h3 for å skape et mellomrom.
+         Byttet til to h3 elementer etter at det slo ut på en tidligere wave-test-->
         <img class="accessibilityBilder" src="Images/div_i_h3.png" alt="Bildet  som viser feil og retting av div i h3">
+        <!--Bilde med en manglende end tag som senere ble fikset-->
         <img class="accessibilityBilder" src="Images/end_tags.png"
              alt="Bildet som viser at det mangler en end tag og rettelsen av det">
 
@@ -73,10 +81,11 @@
         </div>
 
         <div class="mellomrom-setning">
-            <a href="https://webaim.org/resources/contrastchecker/?fbclid=IwAR2dlEEVZ0B8521wKPoe0YfdIyAsacs4ossAxBu2us5goBmCK77N1abqgq4"><strong>WebAIM
-                (Web Accessibility in mind)</strong></a>
+            <a href="https://webaim.org/resources/contrastchecker/?fbclid=IwAR2dlEEVZ0B8521wKPoe0YfdIyAsacs4ossAxBu2us5goBmCK77N1abqgq4">
+                <strong>WebAIM (Web Accessibility in mind)</strong></a>
         </div>
 
+        <!--Bildet som viser kontrasttesten som vi gjennomførte-->
         <img class="accessibilityBilder" src="Images/contrast_checker.png" alt="Bildet av kontrasttesten">
         <p>Kontrasttesten i WebAIM har vist svært positive resultater. Den bekrefter at tekst og annet innhold på
             nettstedet har tilstrekkelig kontrast mot bakgrunnen, noe som forbedrer lesbarheten og
@@ -97,8 +106,10 @@
             <p>Vi brukte HTML-validatoren <a href="https://validator.w3.org/">(https://validator.w3.org/)</a>
                 for å finne feil og for å få ryddet opp i unødvendig kode. Her fant vi ulike former
                 for feil som for eksempel:</p>
-            <ul>
-                <li>
+
+            <!--Liste over feil i HTML-validator-->
+            <ul> <!--Uordnet/unummerert liste-->
+                <li> <!--Liste-element-->
                     Vi hadde et par unødvendige skråstreker
                 </li>
                 <li>
@@ -117,8 +128,12 @@
             <p>Vi brukte CSS-validatoren <a href="https://jigsaw.w3.org/css-validator/">
                 (https://jigsaw.w3.org/css-validator/)</a>
                 for å sjekke at CSS-koden er gyldig og
-                riktig strukturert. Disse feilmeldingene har vi rettet opp i:</p>
+                riktig strukturert. Disse feilmeldingene har vi rettet opp i og fjernet fra koden da de ikke gjorde noe:
+            </p>
+            <!--Bilde av CSS-testen med feil. Disse feilene er rettet opp i.
+            Deriblant border farge hadde samme farge som bakgrunnen. Border, first baseline og auto er fjernet-->
             <img src="Images/css_test.png" class="accessibilityBilder" alt="Bilde av feil vist i testen">
+            <!--Bilde av justify-content: first baseline og max-height: auto som er fjernet-->
             <img src="Images/css_feil.png" class="accessibilityBilder" alt="Bilde av feilene i CSS fila">
         </div>
 
@@ -136,7 +151,7 @@
 <footer>
     <div class="bunntekst">
         <div id="tekstPlasseringBunnbanner">
-            <div class="container_nyhetsbrev">
+            <div class="containerNyhetsbrev">
                 <h3>Hold deg oppdatert på hva som skjer på OsloMet.</h3>
             </div>
 
